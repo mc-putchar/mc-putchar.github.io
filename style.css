@@ -93,20 +93,21 @@ footer {
   }
   
   #typewriter {
-	overflow: hidden; /* Hide overflowing text */
-	white-space: nowrap; /* Prevent line breaks */
-	border-right: 0.15em solid #000; /* Add a blinking cursor effect */
-	font-size: 24px; /* Adjust the font size as needed */
-	font-family: "Courier New", monospace; /* Choose a monospaced font for typewriter effect */
-	animation: typing 3s steps(40) 1s forwards;
+	overflow: hidden;
+	white-space: pre;
+	font-size: 24px;
+	font-family: "Courier New", monospace;
   }
   
-  @keyframes typing {
-	from {
-	  width: 0;
-	}
-	to {
-	  width: 100%;
-	}
+  #typewriter::after {
+	content: "|"; /* Display the cursor */
+	display: inline-block;
+	animation: blink-caret 0.7s infinite;
   }
+  
+  @keyframes blink-caret {
+	from, to { opacity: 0; }
+	50% { opacity: 1; }
+  }
+  
   
