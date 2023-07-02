@@ -6,14 +6,14 @@
 /*   By: mcutura <mcutura@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/02 17:38:59 by mcutura           #+#    #+#             */
-/*   Updated: 2023/07/02 18:20:15 by mcutura          ###   ########.fr       */
+/*   Updated: 2023/07/02 18:33:44 by mcutura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-const text = `~ $> GREETING> Hello! This is your website speaking
-~ $> REMINDER> You are a visitor
-~ $> ALERT: You are being watched
-~ $> POSITIVE AFFIRMATION> Good luck!`;
+const text = `~ GREETING $>Hello! I'm a website.
+~ REMINDER $>You are a visitor.
+~ ALERT $>You are being observed.
+~ POSITIVE AFFIRMATION $>Good luck!`;
 const typewriter = document.getElementById("typewriter");
 
 function putchar() {

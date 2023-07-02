@@ -95,8 +95,8 @@ footer {
   #typewriter {
 	overflow: hidden;
 	white-space: pre;
-	font-size: 24px;
-	font-family: "Courier New", monospace;
+	font-size: 18px;
+	font-family: "Inconsolata", monospace;
   }
   
   #typewriter::after {
@@ -114,7 +114,7 @@ footer {
 	background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value (0.0 to 1.0) for desired transparency */
 	color: #fff;
 	padding: 1rem;
-	font-family: "Courier New", monospace;
+	font-family: "Inconsolata", monospace;
 	white-space: pre;
 	line-height: 1.2;
 	border-radius: 5px;
@@ -127,7 +127,7 @@ footer {
   }
   
   .terminal::after {
-	content: "|";
+	content: "";
 	display: inline-block;
 	animation: blink-caret 0.7s infinite;
   }
