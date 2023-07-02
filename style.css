@@ -13,15 +13,17 @@ MAGIC_NIGHT = #3A3A59;
 }
 
 body {
-	background-image: url(img/noodlelord_hires.jpg);
-	background-size: cover;
-	background-position: center;
-	/* Additional styles */
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 	background-color: #3A3A59;
 }
+
+.background-image {
+	background-image: url(img/noodlelord_hires.jpg);
+	background-size: cover;
+	background-position: center;
+  }
 
 header {
   background-color: #642F6C;
