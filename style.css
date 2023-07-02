@@ -92,3 +92,10 @@ footer {
 	margin: 0 auto;
   }
   
+  #typewriter {
+	overflow: hidden; /* Hide overflowing text */
+	white-space: nowrap; /* Prevent line breaks */
+	border-right: 0.15em solid #000; /* Add a blinking cursor effect */
+	font-size: 24px; /* Adjust the font size as needed */
+	font-family: "Courier New", monospace; /* Choose a monospaced font for typewriter effect */
+  }  
