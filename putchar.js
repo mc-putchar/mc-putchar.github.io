@@ -6,7 +6,7 @@
 /*   By: mcutura <mcutura@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/02 17:38:59 by mcutura           #+#    #+#             */
-/*   Updated: 2023/07/02 21:43:31 by mcutura          ###   ########.fr       */
+/*   Updated: 2023/07/02 21:49:20 by mcutura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,9 @@ const user = document.getElementById("name");
 const email = document.getElementById("email");
 const msg = document.getElementById("message");
 
-const outputText = `${user.value} ${email.value} $> ${message.value}`;
+const outputText = `${user.value} ${email.value} $> ${msg.value}`;
+
+typeText(outputText);
 });
 
 function typeText(text) {
