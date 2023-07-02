@@ -6,7 +6,7 @@
 /*   By: mcutura <mcutura@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/02 17:38:59 by mcutura           #+#    #+#             */
-/*   Updated: 2023/07/02 19:12:26 by mcutura          ###   ########.fr       */
+/*   Updated: 2023/07/02 19:17:08 by mcutura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,18 +52,18 @@ const email = document.getElementById("email");
 const msg = document.getElementById("message");
 
 const outputText = `${user} ${email} $> ${message}`;
-
-	function typeText(text) {
-	  stdout.textContent = "";
-
-	  let index = 0;
-	  const intervalId = setInterval(() => {
-	    stdout.textContent += text2[index];
-	    index++;
-
-	    if (index >= text2.length) {
-	      clearInterval(intervalId);
-	    }
-	  }, 100);
-	}
 });
+
+function typeText(text) {
+	stdout.textContent = "";
+
+	let index = 0;
+	const intervalId = setInterval(() => {
+	  stdout.textContent += text2[index];
+	  index++;
+
+	if (index >= text2.length) {
+		clearInterval(intervalId);
+		}
+	}, 100);
+}
