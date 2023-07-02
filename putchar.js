@@ -6,7 +6,7 @@
 /*   By: mcutura <mcutura@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/02 17:38:59 by mcutura           #+#    #+#             */
-/*   Updated: 2023/07/02 19:17:08 by mcutura          ###   ########.fr       */
+/*   Updated: 2023/07/02 19:19:51 by mcutura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ const text = `~ GREETING $>Hello! I'm a website.
 ~ REMINDER $>You are a visitor.
 ~ ALERT $>You are being observed.
 ~ POSITIVE AFFIRMATION $>Good luck!
-~ $> EOF`;
+~ $>EOF`;
 const typewriter = document.getElementById("typewriter");
 const form = document.querySelector("form");
 const stdout = document.getElementById("stdout");
@@ -38,7 +38,7 @@ function putchar() {
 			cursorElement.style.opacity = "0"; // Hide the cursor initially
 			typewriter.appendChild(cursorElement);
 			}
-		}, index * 3000); // Adjust the delay between lines if needed
+		}, index * 2500); // Adjust the delay between lines
 	});
 }
 
