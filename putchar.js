@@ -6,22 +6,30 @@
 /*   By: mcutura <mcutura@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/02 17:38:59 by mcutura           #+#    #+#             */
-/*   Updated: 2023/07/02 18:07:09 by mcutura          ###   ########.fr       */
+/*   Updated: 2023/07/02 18:13:06 by mcutura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-const text = "~ $> GREETING> Hello! This is your website speaking<br>~ $> REMINDER> You are a visitor<br>~ $> ALERT: You are being watched<br>~ $> POSITIVE AFFIRMATION> Good luck!";
-const speed = 100; // Adjust the typing speed (in milliseconds)
-
-let index = 0;
+const text = `~ $> GREETING> Hello! This is your website speaking
+~ $> REMINDER> You are a visitor
+~ $> ALERT: You are being watched
+~ $> POSITIVE AFFIRMATION> Good luck!`;
 const typewriter = document.getElementById("typewriter");
 
 function putchar() {
-  if (index < text.length) {
-    typewriter.innerHTML += text.charAt(index);
-    index++;
-    setTimeout(putchar, speed);
-  }
+  const lines = text.split("\n");
+  typewriter.textContent = ""; // Clear the existing content
+
+  lines.forEach((line, index) => {
+    const lineElement = document.createElement("span");
+    lineElement.textContent = line;
+    lineElement.style.display = "block"; // Display each line as a block element
+
+    setTimeout(() => {
+      typewriter.appendChild(lineElement);
+    }, index * 1000); // Adjust the delay between lines if needed
+  });
 }
 
 putchar();
+
