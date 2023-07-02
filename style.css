@@ -71,3 +71,16 @@ button {
 button:hover {
   background-color: #58A7AF;
 }
+
+footer {
+	background-color: #642F6C;
+	color: #fff;
+	padding: 1rem;
+	text-align: center;
+  }
+  
+  .container {
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
