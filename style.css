@@ -109,5 +109,25 @@ footer {
 	from, to { opacity: 0; }
 	50% { opacity: 1; }
   }
+
+  .terminal {
+	background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value (0.0 to 1.0) for desired transparency */
+	color: #fff;
+	padding: 1rem;
+	font-family: "Courier New", monospace;
+	white-space: pre;
+	line-height: 1.2;
+	border-radius: 5px;
+  }
   
+  .terminal::before {
+	content: "$";
+	display: inline-block;
+	margin-right: 0.5rem;
+  }
   
+  .terminal::after {
+	content: "|";
+	display: inline-block;
+	animation: blink-caret 0.7s infinite;
+  }
