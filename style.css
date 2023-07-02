@@ -21,8 +21,10 @@ body {
 
 .background-image {
 	background-image: url(img/noodlelord_hires.jpg);
-	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: auto;
 	background-position: center;
+	background-attachment: fixed;
   }
 
 header {
