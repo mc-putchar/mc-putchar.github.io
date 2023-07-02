@@ -6,7 +6,7 @@
 /*   By: mcutura <mcutura@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/02 17:38:59 by mcutura           #+#    #+#             */
-/*   Updated: 2023/07/02 19:00:58 by mcutura          ###   ########.fr       */
+/*   Updated: 2023/07/02 19:12:26 by mcutura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,9 @@ const text = `~ GREETING $>Hello! I'm a website.
 ~ POSITIVE AFFIRMATION $>Good luck!
 ~ $> EOF`;
 const typewriter = document.getElementById("typewriter");
+const form = document.querySelector("form");
 const stdout = document.getElementById("stdout");
 const flushBtn = document.getElementById("flushout");
-const user = document.getElementById("name");
-const email = document.getElementById("email");
-const msg = document.getElementById("message");
 
 function putchar() {
 	const lines = text.split("\n");
@@ -46,21 +44,26 @@ function putchar() {
 
 putchar();
 
-flushBtn.addEventListener("click", () => {
-  const text2 = user.value + " " + email.value + " $>" + msg.value;
-  typeText(text2);
+form.addEventListener('submit', function (event) {
+	event.preventDefault(); // Prevent form submission
+
+const user = document.getElementById("name");
+const email = document.getElementById("email");
+const msg = document.getElementById("message");
+
+const outputText = `${user} ${email} $> ${message}`;
+
+	function typeText(text) {
+	  stdout.textContent = "";
+
+	  let index = 0;
+	  const intervalId = setInterval(() => {
+	    stdout.textContent += text2[index];
+	    index++;
+
+	    if (index >= text2.length) {
+	      clearInterval(intervalId);
+	    }
+	  }, 100);
+	}
 });
-
-function typeText(text) {
-  stdout.textContent = "";
-
-  let index = 0;
-  const intervalId = setInterval(() => {
-    stdout.textContent += text2[index];
-    index++;
-
-    if (index >= text2.length) {
-      clearInterval(intervalId);
-    }
-  }, 100);
-}
