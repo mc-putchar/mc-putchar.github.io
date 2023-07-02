@@ -6,7 +6,7 @@
 /*   By: mcutura <mcutura@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/02 17:38:59 by mcutura           #+#    #+#             */
-/*   Updated: 2023/07/02 21:49:20 by mcutura          ###   ########.fr       */
+/*   Updated: 2023/07/02 21:53:11 by mcutura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,10 +61,10 @@ function typeText(text) {
 
 	let index = 0;
 	const intervalId = setInterval(() => {
-	  stdout.textContent += text2[index];
+	  stdout.textContent += text[index];
 	  index++;
 
-	if (index >= text2.length) {
+	if (index >= text.length) {
 		clearInterval(intervalId);
 		}
 	}, 100);
