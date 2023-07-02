@@ -14,26 +14,26 @@
     </header>
     <main>
 	  <section class="terminal">
-		<h2>FD</h2>
-		<p>cat << EOF</p>
+		<h2>cat << EOF</h2>
 		<p id="typewriter"></p>
+		</section>
       <section>
-        <h2>FD</h2>
-        <p>STDOUT</p>
-      </section>
-      <section>
-        <h2>BUFFER</h2>
+        <h2>REPLY</h2>
         <form action="#" method="post">
-          <label for="name">Source:</label>
+          <label for="name">Identifier:</label>
           <input type="text" id="name" name="name" required />
           <label for="email">Address:</label>
           <input type="email" id="email" name="email" required />
-          <label for="message">Content:</label>
+          <label for="message">Buffer:</label>
           <textarea id="message" name="message" required></textarea>
-          <button type="submit">FLUSH</button>
+          <button type="submit" id="flushout">FLUSH</button>
         </form>
       </section>
-    </main>
+	  <section class="terminal">
+		<h2>STDOUT</h2>
+		<p id="stdout"></p>
+	  </section>
+	</main>
     <footer>
 		<div class="container">
 			<p>&copy; 2023 Martin Čutura</p>
