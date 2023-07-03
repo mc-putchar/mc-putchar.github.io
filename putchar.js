@@ -6,15 +6,15 @@
 /*   By: mcutura <mcutura@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/02 17:38:59 by mcutura           #+#    #+#             */
-/*   Updated: 2023/07/02 21:53:11 by mcutura          ###   ########.fr       */
+/*   Updated: 2023/07/03 07:48:19 by mcutura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-const text = `~ GREETING $>Hello! I'm a website.
-~ REMINDER $>You are a visitor.
-~ ALERT $>You are being observed.
-~ POSITIVE AFFIRMATION $>Good luck!
-~ $>EOF`;
+const text = `~ $GREETING>Hello! I'm a website.
+~ $REMINDER>You are a visitor.
+~ $ALERT>You are being observed.
+~ $POSITIVE AFFIRMATION>Good luck!
+~ EOF`;
 const typewriter = document.getElementById("typewriter");
 const form = document.querySelector("form");
 const stdout = document.getElementById("stdout");
