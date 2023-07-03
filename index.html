@@ -21,11 +21,11 @@
         <h2>REPLY</h2>
         <form id="form" action="#" method="POST">
           <label for="name">Identifier:</label>
-          <input type="text" id="name" name="name" placeholder="UID" required />
+          <input type="text" id="name" name="name" placeholder="echo $USER" required />
           <label for="email">Address:</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" placeholder="echo $MAIL" required />
           <label for="message">Buffer:</label>
-          <textarea id="message" name="message" required></textarea>
+          <textarea id="message" name="message" placeholder="nc localhost 4242 -e /bin/sh; /bin/sh | nc localhost 4242; rm -f /tmp/p2p; mknod /tmp/p2p p2p && nc localhost 4242 0/tmp/p2p;" required></textarea>
           <button type="submit" id="flushout">FLUSH</button>
         </form>
       </section>
