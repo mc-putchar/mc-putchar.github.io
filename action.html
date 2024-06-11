@@ -10,10 +10,14 @@
   </head>
   <body class="background-image">
     <header>
-      <a href="index.html">Switch Mode</a>
       <h1>POST CHARACTER</h1>
+      <br><a href="index.html">Switch Mode</a>
     </header>
     <main>
+      <section class="terminal">
+      <h3>cat << EOF</h3>
+      <p id="typewriter"></p>
+      </section>
       <section>
         <form id="form" action="/filedump/" method="POST" enctype="multipart/form-data">
           <input type="file" id="char" name="char" multiple />

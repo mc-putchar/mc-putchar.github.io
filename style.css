@@ -6,6 +6,12 @@ EXPLORER_BLUE = #58A7AF;
 FILTERED_LIGHT = #B3B0C4;
 MAGIC_NIGHT = #3A3A59;
 */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,18 +19,18 @@ MAGIC_NIGHT = #3A3A59;
 }
 
 body {
-	font-family: "Roboto", sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	background-color: #3A3A59;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #3A3A59;
 }
 
 .background-image {
-	background-image: url(img/noodlelord_hires.jpg);
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: center;
-	background-attachment: fixed;
+  background-image: url(../img/noodlelord_hires.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
   }
 
 header {
@@ -33,8 +39,22 @@ header {
   padding: 1rem;
 }
 
+footer {
+  background-color: #642F6C;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  }
+
 h1 {
   font-size: 2rem;
+  margin: 0;
+  display: inline-block;
 }
 
 main {
@@ -52,9 +72,40 @@ h2 {
   margin-bottom: 1rem;
 }
 
+h2>span {
+  background-color: #71DBD4;
+  color: #642F6C;
+}
+
+a:link, a:visited {
+  background-color: #9cece9;
+  color: #642F6C;
+  border: 2px solid #642F6C;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #71DBD4;
+  color: #642F6C;
+  border: 2px solid #C724B1;
+}
+
 label {
   display: block;
   margin-bottom: 0.5rem;
+}
+
+label>span {
+  background-color: #71DBD4;
+  color: #642F6C;
+}
+
+input {
+  background-color: #9cece9;
+  opacity: 0.91;
 }
 
 input,
@@ -80,54 +131,47 @@ button:hover {
   background-color: #58A7AF;
 }
 
-footer {
-	background-color: #642F6C;
-	color: #fff;
-	padding: 1rem;
-	text-align: center;
-  }
-  
   .container {
-	max-width: 800px;
-	margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
   }
   
   #typewriter {
-	overflow: hidden;
-	white-space: pre;
-	font-size: 18px;
-	font-family: "Inconsolata", monospace;
+  overflow: hidden;
+  white-space: pre;
+  font-size: 18px;
+  font-family: "Inconsolata", monospace;
   }
   
   #typewriter::after {
-	content: "|"; /* Display the cursor */
-	display: inline-block;
-	animation: blink-caret 0.7s infinite;
+  content: "|"; /* Display the cursor */
+  display: inline-block;
+  animation: blink-caret 0.7s infinite;
   }
   
   @keyframes blink-caret {
-	from, to { opacity: 0; }
-	50% { opacity: 1; }
+  from, to { opacity: 0; }
+  50% { opacity: 1; }
   }
 
   .terminal {
-	background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value (0.0 to 1.0) for desired transparency */
-	color: #fff;
-	padding: 1rem;
-	font-family: "Inconsolata", monospace;
-	white-space: pre;
-	line-height: 1.2;
-	border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value (0.0 to 1.0) for desired transparency */
+  color: #fff;
+  padding: 1rem;
+  font-family: "Inconsolata", monospace;
+  white-space: pre;
+  line-height: 1.2;
+  border-radius: 5px;
   }
   
   .terminal::before {
-	content: "$";
-	display: inline-block;
-	margin-right: 0.5rem;
+  content: "$";
+  display: inline-block;
+  margin-right: 0.5rem;
   }
   
   .terminal::after {
-	content: "";
-	display: inline-block;
-	animation: blink-caret 0.7s infinite;
+  content: "";
+  display: inline-block;
+  animation: blink-caret 0.7s infinite;
   }
