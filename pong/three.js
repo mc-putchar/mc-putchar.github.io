@@ -297,8 +297,8 @@ class Game {
 			this.score.position.y = SCORE_HEIGHT;
 			this.score.position.z = centerOffset;
 			this.score.rotation.y = -Math.PI / 2;
-			score.castShadow = true;
-			score.receiveShadow = true;
+			this.score.castShadow = true;
+			this.score.receiveShadow = true;
 			this.scene.add(this.score);
 		} );
 	}
