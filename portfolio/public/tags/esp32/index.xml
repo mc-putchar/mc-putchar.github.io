@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ESP32 on MC putchar</title>
+    <link>localhost/tags/esp32/</link>
+    <description>Recent content in ESP32 on MC putchar</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="localhost/tags/esp32/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drone Dance Dialog</title>
+      <link>localhost/projects/d3/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>localhost/projects/d3/</guid>
+      <description>&lt;h1 id=&#34;drone-dance-dialog&#34;&gt;Drone Dance Dialog&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;extras/Control.png&#34; alt=&#34;Project Preview&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;An &lt;strong&gt;open source application&lt;/strong&gt; designed for &lt;strong&gt;motion capture, choreographing and visualizing drones&lt;/strong&gt; accurately in space using the &lt;strong&gt;OptiTrack system&lt;/strong&gt;.&lt;br&gt;&#xA;This project leverages precise real-time motion capture to control and preview drones, both in simulation and live flight.&lt;br&gt;&#xA;User control interface is built with &lt;strong&gt;React&lt;/strong&gt;, while the backend is written in &lt;strong&gt;C++&lt;/strong&gt; and communicates with drones using &lt;strong&gt;ESP32&lt;/strong&gt; modules connected over ESP-NOW WiFi, ensuring secure and seamless information flow between the control system and the drones.&lt;br&gt;&#xA;To ensure consistent runtime environment, main project modules run inside individual docker containers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
