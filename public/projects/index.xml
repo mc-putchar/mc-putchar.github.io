@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on MC putchar</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on MC putchar</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ft_transcendence</title>
+      <link>http://localhost:1313/projects/ft_transcendence/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ft_transcendence/</guid>
+      <description>&lt;h1 id=&#34;ft_&#34;&gt;&lt;em&gt;ft_transcendence&lt;/em&gt;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/Made_for-42Berlin-black?style=plastic&#34; alt=&#34;42 Berlin&#34;&gt;&#xA;&lt;a href=&#34;https://stats.uptimerobot.com/iK804X9tfp&#34;&gt;&lt;img src=&#34;https://img.shields.io/uptimerobot/status/m797505515-6190c28211f4dbd75e68ae49?up_message=ONLINE&amp;amp;up_color=green&amp;amp;down_message=DOWN&amp;amp;down_color=red&amp;amp;style=plastic&amp;amp;link=https%3A%2F%2Fstats.uptimerobot.com%2FiK804X9tfp&#34; alt=&#34;Uptime Robot status&#34;&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This project is about doing something you’ve never done before.&#xA;Remind yourself the beginning of your journey in computer science.&#xA;Look at you now. Time to shine!&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;&lt;img src=&#34;pong/static/img/jinja-dashboard.png&#34; alt=&#34;IMAGE_PLACEHOLDER&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;description&#34;&gt;&lt;em&gt;Description&lt;/em&gt;:&lt;/h1&gt;&#xA;&lt;p&gt;Free open-source web platform, mainly for playing Pong games and tournaments.&lt;br&gt;&#xA;Inspired by the classic Pong game of the 70s, infused with modern features and technologies.&lt;/p&gt;&#xA;&lt;h1 id=&#34;setup&#34;&gt;&lt;em&gt;Setup&lt;/em&gt;:&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Everything is launched with a single command line to run&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Drone Dance Dialog</title>
+      <link>http://localhost:1313/projects/d3/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/d3/</guid>
+      <description>&lt;h1 id=&#34;drone-dance-dialog&#34;&gt;Drone Dance Dialog&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;extras/Control.png&#34; alt=&#34;Project Preview&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;An &lt;strong&gt;open source application&lt;/strong&gt; designed for &lt;strong&gt;motion capture, choreographing and visualizing drones&lt;/strong&gt; accurately in space using the &lt;strong&gt;OptiTrack system&lt;/strong&gt;.&lt;br&gt;&#xA;This project leverages precise real-time motion capture to control and preview drones, both in simulation and live flight.&lt;br&gt;&#xA;User control interface is built with &lt;strong&gt;React&lt;/strong&gt;, while the backend is written in &lt;strong&gt;C++&lt;/strong&gt; and communicates with drones using &lt;strong&gt;ESP32&lt;/strong&gt; modules connected over ESP-NOW WiFi, ensuring secure and seamless information flow between the control system and the drones.&lt;br&gt;&#xA;To ensure consistent runtime environment, main project modules run inside individual docker containers.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
