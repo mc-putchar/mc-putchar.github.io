@@ -38,6 +38,7 @@ jobs:
     - name: Build and deploy
       run: |
         hugo --minify
+        mkdir -p docs
         cp -r public/* docs/
         echo "Your GitHub Pages site has been deployed!"
 
