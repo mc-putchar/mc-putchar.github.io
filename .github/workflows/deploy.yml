@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.144.2
+      HUGO_VERSION: 0.145.0
 
     steps:
     - name: Checkout code
@@ -45,5 +45,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.DEPLOY_TOKEN }}
         publish_dir: docs
