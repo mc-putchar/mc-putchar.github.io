@@ -16,7 +16,7 @@ draft: false
 > Look at you now. Time to shine!  
 <p style='text-align: center;'> -- en.subject.pdf (v.15) </p>
 
-![IMAGE_PLACEHOLDER](pong/static/img/jinja-dashboard.png)
+![IMAGE_PLACEHOLDER](https://github.com/mc-putchar/ft_transcendence/blob/main/pong/static/img/jinja-dashboard.png)
 
 # _Description_:
 
@@ -46,7 +46,7 @@ Inspired by the classic Pong game of the 70s, infused with modern features and t
 
 # _Features_:
 
-![Architecture](pong/static/img/napkin-design.png)
+![Architecture](https://github.com/mc-putchar/ft_transcendence/blob/main/pong/static/img/napkin-design.png)
 > Tip: `make swapmode` to switch between localhost and domain deployment
 
 ## _Live Chat_
@@ -61,7 +61,7 @@ Inspired by the classic Pong game of the 70s, infused with modern features and t
 
 > 🏓  
 
-![Pong3D](pong/static/img/pong3d.gif)
+![Pong3D](https://github.com/mc-putchar/ft_transcendence/blob/main/pong/static/img/pong3d.gif)
 
 ### Local
   - Play Pong on a local computer against another player or AI opponent
